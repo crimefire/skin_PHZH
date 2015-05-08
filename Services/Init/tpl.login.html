@@ -1,0 +1,71 @@
+
+
+	<!-- BEGIN login_page_editor -->
+    <div>
+        {LPE}
+    </div>
+	<!-- END login_page_editor -->
+    <!-- BEGIN lang_sel -->
+    <div class="otx_lang_selection">
+        {LANG_SELECTION}
+    </div>
+    <!-- END lang_sel -->
+
+
+<div class="ilStartupSection">
+    <!-- BEGIN login_information -->
+    <div class="otx_login_header">{TXT_LOGIN_INFORMATION}</div>
+    <!-- END login_information -->
+	<!-- BEGIN cas_login -->
+	</div>
+		{CAS_LOGIN_FORM}
+	</div>
+	<!-- END cas_login -->
+	<!-- BEGIN ilias_login -->
+	<div class="otx_ilias_login">
+		{LOGIN_FORM}
+	</div>
+	<!-- END ilias_login -->
+	<!-- BEGIN openid_login -->
+	<div>
+		{OID_LOGIN_FORM}
+	</div>
+	<!-- END openid_login -->
+
+	<!-- BEGIN reg_links -->
+	<div class="otx_reg_links1">
+		{REG_PWD_CLIENT_LINKS}
+	</div>
+	<!-- END reg_links -->
+    <!-- BEGIN shib_login_form -->
+    <div class="otx_shib_login">
+        {SHIB_LOGIN_FORM}
+    </div>
+    <!-- END shib_login_form -->
+
+
+    <!-- BEGIN reg_links -->
+    <div class="otx_reg_links2">
+        {REG_PWD_CLIENT_LINKS}
+    </div>
+    <!-- END reg_links -->
+
+    <div class="otx_additional_information">
+        <a href="http://ilias.phzh.ch/goto.php?target=cat_73&amp;client_id=phzh">Informationen und Support zu ILIAS</a>
+    </div>
+    <!-- BEGIN agreement -->
+    <div class="otx_agreement">
+        {USER_AGREEMENT}
+    </div>
+    <!-- END agreement -->
+
+</div>
+<script language="JavaScript">
+<!--
+if (document.formlogin.username && document.formlogin.password)
+{
+	if(document.formlogin.username.value!="") document.formlogin.password.focus();
+	else document.formlogin.username.focus();
+}
+//-->
+</script>
